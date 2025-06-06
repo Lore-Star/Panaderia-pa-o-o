@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería Pañoño - Menú</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div style="text-align: center;" class="header-bg">
+            <h1>PANADERIA PAÑOÑO</h1>
+        </div>
+        <div class="central">
+            <a href="index.html" target="_self">Inicio</a>
+            <a href="menu.html" target="_self">Menú</a>
+            <a href="http://endless.horse/" target="_self">Contactos</a>
+            <a href="https://www.youtube.com/watch?v=5LcKilYc5pY" target="_self">Descarga</a>
+        </div>
+        <div class="carrusel">
+            <button class="prev">&#10094;</button>
+                <div class="carrusel-items">
+                    <div class="producto">
+                        <img src="images/panleja.jpg" alt="Pan 1">
+                        <h3>Pan de Leja</h3>
+                        <p>Un pan tradicional con una textura crujiente y un sabor inigualable.</p>
+                    </div>
+                    <div class="producto">
+                        <img src="images/pansobado.jpg" alt="Pan 2">
+                        <h3>Pan Sobado</h3>
+                        <p>Un pan suave y esponjoso, ideal para acompañar tus comidas.</p>
+                    </div>
+                    <div class="producto">
+                        <img src="images/panalfacar.jpg" alt="Pan 2">
+                        <h3>Pan Alfacar</h3>
+                        <p>Un pan tradicional con un toque especial.</p>
+                    </div>
+                    <div class="producto">
+                        <img src="images/panagua.jpg" alt="Pan 1">
+                        <h3>Pan de Agua</h3>
+                        <p>Un pan ligero y fresco, perfecto para cualquier ocasión.</p>
+                    </div>
+                </div>
+            <button class="next">&#10095;</button>
+        </div>
+    <script>
+    const carrusel = document.querySelector('.carrusel-items');
+    document.querySelector('.prev').onclick = () => carrusel.scrollBy({left: -300, behavior: 'smooth'});
+    document.querySelector('.next').onclick = () => carrusel.scrollBy({left: 300, behavior: 'smooth'});
+    </script>
+</body>

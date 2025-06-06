@@ -1,0 +1,225 @@
+
+.bloque-color {
+  background-color: rgb(133, 6, 44);
+}
+
+header {
+    display: block;
+}
+
+.container {
+    background: rgb(122, 10, 38);
+    padding: 1em 1.5em;
+    border: 4mm ridge rgba(110, 16, 37, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    max-width: 900px;
+    min-height: 100vh;
+    width: 100%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    color: rgb(97, 29, 46);
+    background-image: url('images/pan1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} 
+
+p{
+    color: #CAB7BC;
+}
+
+h1{
+    margin: 0 0 1em 0;
+    font-weight: 900;
+    font-size: 550%;
+    font-family: "Inria Serif", serif;
+    text-shadow:
+        -3px -3px 0 #CAB7BC,
+        3px -3px 0 #CAB7BC,
+        -3px 3px 0 #CAB7BC,
+        3px 3px 0 #CAB7BC,
+        0 0 8px #CAB7BC;
+}
+
+h2 {
+    margin: 0 0 1em 0;
+    font-weight: 700;
+    font-size: 250%;
+    font-family: "Khand", sans-serif;
+    color: #CAB7BC;
+}
+
+li {
+    margin: 0 0 1em 0;
+    font-weight: 700;
+    font-size: 250%;
+    font-family: "Khand", sans-serif;
+    color: #CAB7BC;
+}
+
+h3 {
+    margin: 0 0 1em 0;
+    font-weight: 700;
+    font-size: 450%;
+    font-family: "Khand", sans-serif;
+    color: #CAB7BC;
+}
+
+
+p {
+    margin: 0 0 1em 0;
+    line-height: 1.6;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul, ol {
+    margin: 0 0 1em 2em;
+    padding: 0;
+}
+
+button {
+    margin: 0 0 1em 0;
+    font-weight: 500;
+    font-size: 110%;
+    font-family: "Khand", sans-serif;
+    color: #CAB7BC;
+    background: #a01b31;
+    color: #fff;
+    border: 2mm ridge rgba(110, 16, 37, 0.6);
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.9s;
+    transition: color 0.8s;
+}
+
+button:hover {
+    background-color: #c7e8ff;
+    color: black;
+        box-shadow:
+        inset -2px -2px 3px rgb(209, 203, 203),
+        inset 2px 2px 3px rgb(207, 199, 199);
+}
+
+a:link, a:visited {
+    margin: 0 0 1em 0;
+    font-weight: 500;
+    font-size: 110%;
+    font-family: "Khand", sans-serif;
+    color: #CAB7BC;
+    background: #a01b31;
+    color: #fff;
+    border: 2mm ridge rgba(110, 16, 37, 0.6);
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.9s;
+    transition: color 0.8s;
+}
+a:hover, a:active {
+    background-color: #c7e8ff;
+    color: black;
+        box-shadow:
+        inset -2px -2px 3px rgb(209, 203, 203),
+        inset 2px 2px 3px rgb(207, 199, 199);
+}
+
+.nostyle {
+    background: none !important;
+    color: inherit !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font: inherit !important;
+    border-radius: 0 !important;
+    cursor: pointer;
+    transition: none !important;
+}
+.nostyle:hover, .nostyle:active {
+    background: none !important;
+    color: inherit !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+}
+
+.central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.header-bg {
+    background: rgb(122, 10, 38);
+    padding: 0.2em 1.1em;
+    border: 4mm ridge rgba(110, 16, 37, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    max-width: 900px;
+    margin: 1em auto 1em auto;
+    text-align: center;
+}
+
+.carrusel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 2em auto;
+  max-width: 900px;
+}
+.carrusel-items {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 2em;
+  width: 600px;
+}
+.producto {
+  min-width: 250px;
+  background: rgb(122, 10, 38);
+  border-radius: 16px;
+  color: #CAB7BC;
+  text-align: center;
+  padding: 1em;
+}
+.producto img {
+  width: 100%;
+  border-radius: 10px;
+}
+button.prev, button.next {
+    margin: 0 0 1em 0;
+    font-weight: 500;
+    font-size: 110%;
+    font-family: "Khand", sans-serif;
+    color: #CAB7BC;
+    background: #a01b31;
+    color: #fff;
+    border: 2mm ridge rgba(110, 16, 37, 0.6);
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
